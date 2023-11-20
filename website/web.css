@@ -1,0 +1,137 @@
+*{
+    margin:0;
+   
+    padding:0;
+    box-sizing:border-box;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+   
+    color: whitesmoke;
+}
+h1{
+    color: chocolate;
+
+}
+body{
+    background-color: black;
+}
+header{
+    animation:header 2s ease-in-out;
+}
+@keyframes header{
+    0%
+    {
+        transform: translateY(-100%);
+    }
+}
+.main{
+    width:100%;
+    display: flex;
+    }
+    .content{
+        animation:content 2s ease-in-out;
+}
+@keyframes content{
+    0%{
+        transform: translateX(-100%);
+    }
+}
+.title{
+    width: 100%;
+    min-width: 100vh;
+    margin: 10px 05px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding:15px 20px;
+    margin-bottom: 65px;;
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin: 30px;
+}
+.hbody{
+    margin-top: 10px;
+    margin-bottom: 1%;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    width: 100%;
+    font-size: xx-large;
+    word-spacing: 2px;
+    letter-spacing: 3px;
+}
+.body{
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 1px;
+    padding: 20px 60px;
+    width: 100%;
+    font-size: larger;
+    word-spacing:1px;
+    letter-spacing: 1px;
+}
+span{
+    color:chocolate;
+}
+.image{
+    width: 50%;
+    animation: image 5s ease-in-out;
+    z-index: -1;
+    
+}
+@keyframes image {
+        0%{
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translateX(-360%);
+        }
+}
+img{
+        width:30rem;
+        align-items: center;
+}
+button{
+    color: white;
+    border-radius: 3px;
+    box-shadow: 10px;
+    background-color: chocolate;
+    margin: 10px;
+    padding: 8px;
+}
+@media screen and (max-width:1200px){
+    .content{
+        text-align: center;
+        
+    
+    }
+    img{
+         align-items: center;
+         position: absolute;
+         bottom:-3%;
+         display: flex;
+         justify-content: center;
+         width:30rem;
+    }
+    
+ 
+}
+
+@media screen and (max-width:576px){
+    .content{
+        text-align: center;
+        
+    
+    }
+    img{
+         align-items: center;
+         position: absolute;
+         bottom:-3%;
+         display: flex;
+         justify-content: center;
+         width:30rem;
+    }
+    
+ 
+}
